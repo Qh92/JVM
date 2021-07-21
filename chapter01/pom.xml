@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jvm</artifactId>
+        <groupId>com.qinh</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 内存与垃圾回收 -->
+    <artifactId>chapter01</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>classloader</module>
+        <module>execution-engine</module>
+        <module>gc</module>
+        <module>gc-collector</module>
+        <module>heap</module>
+        <module>hello-jvm</module>
+        <module>method-area</module>
+        <module>native-method</module>
+        <module>object-create</module>
+        <module>pc-register</module>
+        <module>string-table</module>
+        <module>vm-stack</module>
+    </modules>
+
+
+
+</project>
