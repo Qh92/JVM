@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- 内存与垃圾回收 -->
+    <!-- 篇幅一:内存与垃圾回收 -->
     <artifactId>chapter01</artifactId>
     <packaging>pom</packaging>
     <modules>
