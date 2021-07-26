@@ -10,11 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>chapter02</artifactId>
+    <packaging>pom</packaging>
 
     <name>Maven</name>
     <!-- FIXME change it to the project's website -->
     <url>http://maven.apache.org/</url>
     <inceptionYear>2001</inceptionYear>
+    <modules>
+        <module>bytecode-instructions</module>
+    </modules>
 
     <distributionManagement>
         <site>
