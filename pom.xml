@@ -9,9 +9,8 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>classloader</module>
     <module>chapter01</module>
-      <module>chapter02</module>
+    <module>chapter02</module>
   </modules>
 
   <name>Maven</name>
