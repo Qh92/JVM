@@ -18,6 +18,7 @@
     <inceptionYear>2001</inceptionYear>
     <modules>
         <module>bytecode-instructions</module>
+        <module>class-loader</module>
     </modules>
 
     <distributionManagement>
