@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>command-line</module>
+        <module>gui</module>
     </modules>
 
 
