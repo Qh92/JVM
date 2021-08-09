@@ -15,6 +15,7 @@
     <modules>
         <module>command-line</module>
         <module>gui</module>
+        <module>vm-options</module>
     </modules>
 
 
