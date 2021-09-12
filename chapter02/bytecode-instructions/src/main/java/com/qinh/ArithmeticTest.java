@@ -77,4 +77,22 @@ public class ArithmeticTest {
         i = i++;
         System.out.println(i);//10
     }
+
+    /**
+     *  0 bipush 10 将10压入操作数栈顶
+     *  2 istore_1 弹出操作数栈顶位置的10，并将10存入局部变量表中角标为1的位置
+     *  3 iinc 1 by 1 将局部变量表中角标为1的数据自增1
+     *  6 iload_1  取出局部表中角标为1的数据并压入操作数栈顶
+     *  7 istore_1 将操作数栈顶的数据弹出并存入局部变量表中角标为1的位置
+     *  8 getstatic #2 <java/lang/System.out>
+     * 11 iload_1
+     * 12 invokevirtual #5 <java/io/PrintStream.println>
+     * 15 return
+     */
+    @Test
+    public void method9(){
+        int i = 10;
+        i = ++i;
+        System.out.println(i);//11
+    }
 }
