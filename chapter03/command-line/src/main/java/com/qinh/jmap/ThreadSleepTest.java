@@ -4,6 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 线程waiting测试
+ * 手动执行：
+ *      生成堆中所有对象的快照：
+ *          jmap -dump:format=b,file=d:\1.hprof 11696
+ *      生成堆中存活对象的快照：
+ *          jmp -dump:live,format=b,file=d:\4.hprof 11696
  *
  * @author Qh
  * @version 1.0
