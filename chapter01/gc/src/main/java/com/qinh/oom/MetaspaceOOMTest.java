@@ -27,7 +27,9 @@ import java.lang.reflect.Method;
  */
 public class MetaspaceOOMTest {
     static class OOMTest {
-
+        public void print(){
+            System.out.println("this is test");
+        }
     }
 
     public static void main(String[] args) {
@@ -43,10 +45,12 @@ public class MetaspaceOOMTest {
                 enhancer.setCallback(new MethodInterceptor(){
                     @Override
                     public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
+                        System.out.println("cglib代理模式: subClass#print");
                         return proxy.invokeSuper(obj, args);
                     }
                 });
-                enhancer.create();
+                OOMTest test = (OOMTest)enhancer.create();
+                test.print();
             }
         } catch (Throwable e) {
             System.out.println("********多少次后发生了异常：" + i);
