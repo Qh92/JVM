@@ -3,6 +3,8 @@ package com.qinh.java.exer;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
+ * 定位：分析对象在JVM的大小和分布
+ *
  * new Object();
  *
  * @author Qh
