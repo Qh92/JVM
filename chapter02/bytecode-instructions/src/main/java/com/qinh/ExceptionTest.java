@@ -54,6 +54,21 @@ public class ExceptionTest {
         }
     }
 
+    /**
+     *  0 iconst_0 将0压入操作数栈中
+     *  1 istore_0 将0存入局部变量表第0个位置
+     *  2 iinc 0 by 1 局部变量表的第0个位置的数自增1
+     *  5 iload_0 将局部变量表的第0个位置的数压入操作数栈中
+     *  6 istore_1 将操作数栈中的数存入局部变量表的第1个位置
+     *  7 iinc 0 by 1 局部变量表的第0个位置的数自增1（现在数值为2）
+     * 10 iload_1 将局部变量表的第1个位置的数压入操作数栈中
+     * 11 ireturn 最后将这个值返回 最终返回值为1
+     * 12 astore_2
+     * 13 iinc 0 by 1
+     * 16 aload_2
+     * 17 athrow
+     * @return
+     */
     public static int func2(){
         int i = 0;
         try {
@@ -61,6 +76,26 @@ public class ExceptionTest {
         }finally {
             ++i;
         }
+    }
+
+    /**
+     * 0 iconst_0
+     *  1 istore_0
+     *  2 iinc 0 by 1
+     *  5 iinc 0 by 1
+     *  8 iconst_0
+     *  9 istore_1
+     * 10 iinc 1 by 1
+     * 13 iinc 1 by 1
+     * 16 return
+     */
+    public static void func3() {
+        int i = 0;
+        i++;
+        i++;
+        int j = 0;
+        j++;
+        j++;
     }
 
     public static void main(String[] args) {
