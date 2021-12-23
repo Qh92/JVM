@@ -50,7 +50,19 @@ public class ObjectTest {
              */
             System.out.println(ClassLayout.parseInstance(o).toPrintable());
         }
+
+        System.out.println("------------");
+        Q q = new Q();
+        System.out.println(ClassLayout.parseInstance(q).toPrintable());
     }
 
 
+}
+class Q {
+    /**
+     * 单个boolean占用1个字节
+     * boolean[] 占用4个字节
+     */
+    //boolean b = false;
+    boolean[] b;
 }
