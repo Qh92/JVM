@@ -53,7 +53,8 @@ public class ClassLoaderTest1 {
             //将系统类加载器设置为当前线程的上下文类加载器
             Thread.currentThread().setContextClassLoader(this.loader);
              */
-            //sun.misc.Launcher$AppClassLoader@18b4aac2
+            //Thread.currentThread().setContextClassLoader(extClassLoader);
+            //默认是系统类加载器：sun.misc.Launcher$AppClassLoader@18b4aac2
             System.out.println(Thread.currentThread().getContextClassLoader());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
